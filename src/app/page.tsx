@@ -1,26 +1,28 @@
 import React from "react";
 import Hero from "@/components/Home/Hero";
-import Work from "@/components/Home/work";
-import TimeLine from "@/components/Home/timeline";
-import Platform from "@/components/Home/platform";
-import Portfolio from "@/components/Home/portfolio";
-import Upgrade from "@/components/Home/upgrade";
-import Perks from "@/components/Home/perks";
+import About from "@/components/Home/About";
+import Services from "@/components/Home/Services";
+import Process from "@/components/Home/Process";
+import Portfolio from "@/components/Home/Portfolio";
+import WhyChooseUs from "@/components/Home/WhyChooseUs";
+import Team from "@/components/Home/Team";
 import { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: "CrypGo",
+  title: "The Brand Pulse - Strategic Brand Marketing Agency",
+  description: "Transform your brand with strategic marketing solutions that drive growth and engagement.",
 };
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <Work />
-      <TimeLine />
-      <Platform />
+      <About />
+      <Services />
+      <Process />
       <Portfolio />
-      <Upgrade />
-      <Perks />
+      <WhyChooseUs />
+      <Team />
     </main>
   );
 }
